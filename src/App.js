@@ -8,7 +8,7 @@ export default function App() {
         <div class="code-link">
           <p>
             <a
-              href="https://github.com/WinglessNomad/weather-react-app"
+              href="https://github.com/WinglessNomad/dictionary-project"
               class="cl"
               rel="noopener y
               noreferrer"
