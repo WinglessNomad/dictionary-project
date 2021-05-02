@@ -3,8 +3,9 @@
 .App {
   text-align: center;
   box-sizing: border-box;
+  font-family: "Poor Story", cursive;
 }
-.main {
+main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-content: center;
@@ -17,12 +18,22 @@
   grid-column: 1;
   align-items: center;
   justify-items: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 5px;
 }
+
+/*for main word - font-family: 'Macondo', cursive;*/
 
 /*RIGHT AREA*/
 .areaRight {
   display: grid;
   grid-column: 2;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 5px;
 }
 
 /*FOOTER*/

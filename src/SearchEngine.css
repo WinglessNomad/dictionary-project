@@ -1,0 +1,16 @@
+.searchBar {
+  font-size: 1rem;
+  margin: 10px;
+  padding: 3px;
+  line-height: 1.5;
+  justify-self: center;
+  border-radius: 5px;
+}
+
+.searchButton {
+  display: block;
+  margin: 0 auto;
+  justify-self: center;
+  padding: 3px 6px;
+  text-align: center;
+}

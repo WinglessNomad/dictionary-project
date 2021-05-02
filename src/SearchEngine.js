@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SearchEngine.css";
 
 export default function SearchEngine() {
   let [keyword, setKeyword] = useState(null);
@@ -16,7 +17,7 @@ export default function SearchEngine() {
         <input
           type="search"
           className="searchBar"
-          placeholder="Search"
+          placeholder="Enter keyword"
           aria-label="Search"
           onChange={updateKeyword}
         ></input>
