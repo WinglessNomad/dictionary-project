@@ -1,12 +1,14 @@
 import React, { useState } from "react";
+import Feedback from "./Feedback";
 import axios from "axios";
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
   let [keyword, setKeyword] = useState(null);
+  let [feedback, setFeedback] = useState(null);
 
   function getResponse(response) {
-    console.log(response.data[0]);
+    setFeedback(response.data[0]);
   }
 
   function search(event) {
@@ -38,6 +40,7 @@ export default function SearchEngine() {
           Search
         </button>
       </form>
+      <Feedback results={feedback} />
     </div>
   );
 }
