@@ -9,19 +9,47 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-content: center;
-  justify-content: space-around;
+  gap: unset;
 }
 
 /*LEFT AREA*/
+
 .areaLeft {
   display: grid;
   grid-column: 1;
   align-items: center;
   justify-items: center;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 10px;
-  margin-top: 5px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 26px auto 0;
+  max-width: 550px;
+  min-height: 300px;
+  padding: 24px;
+  position: relative;
+  width: 80%;
+}
+
+.areaLeft:before,
+.areaLeft:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.areaLeft:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+.areaLeft:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
 }
 
 /*for main word - font-family: 'Macondo', cursive;*/
@@ -30,10 +58,39 @@ main {
 .areaRight {
   display: grid;
   grid-column: 2;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 10px;
-  margin-top: 5px;
+  align-items: center;
+  justify-items: center;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 26px auto 0;
+  max-width: 550px;
+  min-height: 300px;
+  padding: 24px;
+  position: relative;
+  width: 80%;
+}
+
+.areaRight:before,
+.areaRight:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.areaRight:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  left: -3px;
+  top: 1px;
+  transform: rotate(-2.5deg);
+}
+.areaRight:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  right: -5px;
+  top: 4px;
+  transform: rotate(1.4deg);
 }
 
 /*FOOTER*/
