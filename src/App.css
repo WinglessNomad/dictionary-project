@@ -4,6 +4,8 @@
   text-align: center;
   box-sizing: border-box;
   font-family: "Poor Story", cursive;
+  color: #2a2c2e;
+  font-size: 1.15rem;
 }
 main {
   display: grid;
@@ -17,8 +19,7 @@ main {
 .areaLeft {
   display: grid;
   grid-column: 1;
-  align-items: center;
-  justify-items: center;
+  align-items: start;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 26px auto 0;
@@ -27,6 +28,7 @@ main {
   padding: 24px;
   position: relative;
   width: 80%;
+  height: 600px;
 }
 
 .areaLeft:before,
@@ -68,6 +70,7 @@ main {
   padding: 24px;
   position: relative;
   width: 80%;
+  height: 600px;
 }
 
 .areaRight:before,

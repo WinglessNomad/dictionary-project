@@ -1,12 +1,13 @@
 import React from "react";
 import Definition from "./Definition";
 import Phonetics from "./Phonetics";
+import "./Feedback.css";
 
 export default function Feedback(props) {
   if (props.results) {
     return (
-      <div>
-        <h2>{props.results.word}</h2>
+      <div className="feedback">
+        <h2 className="word">{props.results.word}</h2>
         {props.results.phonetics.map(function (phonetic, index) {
           return (
             <div key={index}>

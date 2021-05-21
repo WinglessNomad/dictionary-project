@@ -1,0 +1,10 @@
+.part {
+  font-family: "Macondo", cursive;
+  text-shadow: 2px 2px 2px #708087;
+  text-transform: capitalize;
+}
+
+.define::first-letter,
+.example::first-letter {
+  text-transform: capitalize;
+}
