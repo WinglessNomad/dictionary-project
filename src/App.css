@@ -34,10 +34,12 @@ footer {
 .code-link {
   color: var(--clr-text);
   margin: 0;
+  font-size: 1em;
 }
 
 .cl {
   text-decoration: none;
   color: var(--clr-text);
   margin: 0;
+  font-size: 1em;
 }

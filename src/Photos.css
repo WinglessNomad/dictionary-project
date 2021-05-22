@@ -10,7 +10,7 @@
   padding: 24px;
   position: relative;
   width: 80%;
-  opacity: 0.5;
+  opacity: 0.8;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -41,6 +41,7 @@
 img {
   border-radius: 3px;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 12px 1px var(--clr-text);
 }
 a {
   margin: 0 auto;

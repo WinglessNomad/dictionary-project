@@ -19,7 +19,7 @@
   padding: 24px;
   position: relative;
   width: 80%;
-  opacity: 0.5;
+  opacity: 0.7;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
