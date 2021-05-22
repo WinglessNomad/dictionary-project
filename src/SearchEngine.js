@@ -21,9 +21,9 @@ export default function SearchEngine() {
   function updateKeyword(event) {
     setKeyword(event.target.value);
   }
-
   return (
     <div className="searching">
+      <section>
       <form className="searchForm" onSubmit={search}>
         <input
           type="search"
@@ -34,12 +34,12 @@ export default function SearchEngine() {
         ></input>
         <button
           type="submit"
-          className="btn btn-outline-dark searchButton"
+          className="btn btn-outline-light searchButton"
           aria-label="submit search"
         >
           Search
         </button>
-      </form>
+      </form></section>
       <Feedback results={feedback} />
     </div>
   );

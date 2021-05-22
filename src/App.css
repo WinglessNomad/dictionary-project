@@ -4,107 +4,40 @@
   text-align: center;
   box-sizing: border-box;
   font-family: "Poor Story", cursive;
-  color: #2a2c2e;
+  color: var(--clr-text);
   font-size: 1.15rem;
 }
-main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-content: center;
-  gap: unset;
+/*HEADER*/
+
+.title {
+  font-family: "Architects Daughter", cursive;
+  text-shadow: 0 0 10px var(--clr-text);
+  margin-top: 1.5em;
 }
 
-/*LEFT AREA*/
+/*MAIN AREA*/
 
-.areaLeft {
-  display: grid;
-  grid-column: 1;
+section {
   align-items: start;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin: 26px auto 0;
-  max-width: 550px;
-  min-height: 300px;
-  padding: 24px;
-  position: relative;
-  width: 80%;
-  height: 600px;
-}
-
-.areaLeft:before,
-.areaLeft:after {
-  content: "";
-  height: 98%;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-.areaLeft:before {
-  background: #fafafa;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  left: -5px;
-  top: 4px;
-  transform: rotate(-2.5deg);
-}
-.areaLeft:after {
-  background: #f6f6f6;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  right: -3px;
-  top: 1px;
-  transform: rotate(1.4deg);
 }
 
 /*for main word - font-family: 'Macondo', cursive;*/
 
-/*RIGHT AREA*/
-.areaRight {
-  display: grid;
-  grid-column: 2;
-  align-items: center;
-  justify-items: center;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin: 26px auto 0;
-  max-width: 550px;
-  min-height: 300px;
-  padding: 24px;
-  position: relative;
-  width: 80%;
-  height: 600px;
-}
-
-.areaRight:before,
-.areaRight:after {
-  content: "";
-  height: 98%;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-.areaRight:before {
-  background: #fafafa;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  left: -3px;
-  top: 1px;
-  transform: rotate(-2.5deg);
-}
-.areaRight:after {
-  background: #f6f6f6;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  right: -5px;
-  top: 4px;
-  transform: rotate(1.4deg);
-}
-
 /*FOOTER*/
-.code-link {
+
+footer {
+  font-size: 1em;
   font-family: "Architects Daughter", cursive;
   text-align: center;
-  color: rgb(34, 43, 43);
+  color: var(--clr-text);
+}
+.code-link {
+  color: var(--clr-text);
+  margin: 0;
 }
 
 .cl {
-  font-family: "Architects Daughter", cursive;
   text-decoration: none;
-  color: rgb(34, 43, 43);
+  color: var(--clr-text);
+  margin: 0;
 }

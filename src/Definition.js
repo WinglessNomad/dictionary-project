@@ -4,17 +4,20 @@ import "./Definition.css";
 
 export default function Definition(props) {
   return (
-    <div className="Definition">
+    <section className="definition">
       <h4 className="part">{props.meaning.partOfSpeech}</h4>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index}>
+            <div>
             <p className="define">{definition.definition}</p>
-            <p className="example">{definition.example}</p>
-            <Synonyms synonyms={definition.synonyms} />
+            <p className="example">Use context: <br /><em>{definition.example}</em></p>
+            </div>
+            <section>
+            <Synonyms synonyms={definition.synonyms} /></section>
           </div>
         );
       })}
-    </div>
+    </section>
   );
 }

@@ -4,13 +4,12 @@ import "./Synonyms.css";
 export default function Synonyms(props) {
   if (props.synonyms) {
     return (
-      <div className="synonyms-list">
-        <ul className="synonym">
+      <section className="synonyms-list">
+        <h4>Synonyms</h4>
           {props.synonyms.map(function (synonym, index) {
-            return <li key={index}>{synonym}</li>;
+            return (<div key={index}><p>{synonym}</p></div>);
           })}
-        </ul>
-      </div>
+      </section>
     );
   } else {
     return null;

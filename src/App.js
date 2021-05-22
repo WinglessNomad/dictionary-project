@@ -5,12 +5,13 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header"></header>
+        <header className="App-header">
+          <h2 className="title">We're all mad here</h2>
+        </header>
         <main>
-          <section className="areaLeft">
+          <section className="search">
             <SearchEngine />
           </section>
-          <section className="areaRight"></section>
         </main>
         <footer>
           <div class="code-link">

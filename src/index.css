@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*DECLARING COLOURS*/
+
+:root {
+  --clr-bg: hsl(200, 4%, 17%);
+  --clr-text: hsl(210, 9%, 87%);
+  --clr-bg-section: hsl(200, 3%, 19%);
+  --clr-gradient: repeating-linear-gradient(
+    90deg,
+    rgba(254, 16, 7, 1) 0%,
+    rgba(254, 158, 10, 1) 16%,
+    rgba(238, 254, 3, 1) 32%,
+    rgba(6, 251, 52, 1) 49%,
+    rgba(12, 236, 246, 1) 65%,
+    rgba(10, 13, 251, 1) 82%,
+    rgba(114, 6, 235, 1) 100%
+  );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: var(--clr-bg);
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }

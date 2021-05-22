@@ -7,21 +7,25 @@ export default function Feedback(props) {
   if (props.results) {
     return (
       <div className="feedback">
+        <section className="main-word">
         <h2 className="word">{props.results.word}</h2>
         {props.results.phonetics.map(function (phonetic, index) {
           return (
             <div key={index}>
               <Phonetics phonetic={phonetic} />
-            </div>
+      </div>
           );
         })}
+        </section>
+  
         {props.results.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <section className="main-definition" key={index}>
               <Definition meaning={meaning} />
-            </div>
+              </section>
           );
         })}
+        
       </div>
     );
   } else {
